@@ -53,4 +53,4 @@ jobs:
         run: |
           aws s3 cp \
           --region ap-northeast-2 \
-          --acl private \ ./deploy/springboot-mobileinvitation-build.zip s3://springboot-mobileinvitation-build/springboot-mobileinvitation-build.zip
+          --acl private \ ./springboot-mobileinvitation-build.zip s3://springboot-mobileinvitation-build
