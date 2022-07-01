@@ -43,7 +43,7 @@ jobs:
 
       # 압축파일 형태로 전달
       - name: Make zip file
-        run: zip -r -qq -j ./springboot-mobileinvitation-build.zip ./deploy
+        run: zip -r -qq -j ./TEST.zip ./deploy
 
       # S3 Bucket으로 copy
       - name: Deliver to AWS S3
@@ -53,4 +53,4 @@ jobs:
         run: |
           aws s3 cp \
           --region ap-northeast-2 \
-          --acl private \ ./springboot-mobileinvitation-build.zip s3://springboot-mobileinvitation-build/
+          --acl private \ ./TEST.zip s3://springboot-mobileinvitation-build/
